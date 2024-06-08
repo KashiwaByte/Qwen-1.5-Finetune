@@ -1,13 +1,21 @@
 # 任务介绍
 通过在基座大模型上进行指令微调的方式实现文本分类任务
 
+你可以选择两种训练方式：
+
+1. 使用Jupyter Notebook: 跟随`Pipeline.ipynb`的指引一路执行
+2. 直接运行`train.py`
+
+在此之前——请确保你已经安装好的必备的环境：`pip install -r requirements.txt`
+
+---
+
 
 数据集为jsonl格式，每行json由 给定文本（Text），文本类型选项（Catagory），正确文本类型（output）,三个部分组成
 
 ![image.png](https://kashiwa-pic.oss-cn-beijing.aliyuncs.com/20240602214420.png)
 
 # 具体步骤
-
 
 ## 数据集处理
 
@@ -216,9 +224,6 @@ pip install swanlab
 目前SwanLab已经对十几个主流的开源框架进行了集成，让我们可以通过几行代码轻松实现日志记录。我们通过查询它的官方文档可以发现，SwanLab目前已经支持了Transformers  Trainer的支持。
 
 ![image.png](https://kashiwa-pic.oss-cn-beijing.aliyuncs.com/20240602221222.png)
-
-
-
 
 
 ### 设置Trainer开启训练

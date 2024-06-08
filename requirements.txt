@@ -1,0 +1,7 @@
+swanlab
+modelscope
+transformers
+datasets
+peft
+accelerate
+pandas
